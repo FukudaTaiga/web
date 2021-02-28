@@ -1,3 +1,7 @@
+<?php
+  include($path."_inc/comment.php");
+?>
+
 <footer>
   <small>Copyright (c) Fukuda Taiga All Rights Reserved.</small> <!-- something about rights -->
   <address>

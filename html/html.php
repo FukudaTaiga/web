@@ -18,6 +18,7 @@
       ?>
 
       <main>
+        <h1>HTMLの全体的な構成</h1>
         <section>
           <h2>html</h2>
           <p>
@@ -40,12 +41,13 @@
         </section>
 
         <section>
-          <h3> <code>&lt;!DOCTYPE html&gt;</code> </h3>
+          <h3> DOCTYPE宣言 </h3>
           <p>
-            これはソースコードがHTML, XHTMLで記述されていることを示す為に文書の先頭に記述する. <br>
+            <code>&lt;!DOCTYPE html&gt;</code>は
+            ソースコードがHTML, XHTMLで記述されていることを示す為に文書の先頭に記述する. <br>
             HTMLのバージョン・DTD(Document Type Definition)等指定できるらしいが,
             私は初学者で特に必要性を感じていないため, 利用する機会があり学んだ場合はまとめようと思う.
-            このまま記述するとHTML5の使用で解釈されることになる.
+            このまま記述するとHTML5の仕様で解釈されることになる.
           </p>
         </section>
 
@@ -74,7 +76,7 @@
             メタデータ(コンピュータが読む為のデータ)が格納される.
             例えば, タイトル, スタイルシート(cssの情報), script情報, 外部ソースとの関係,
             文書内のリンクのルート等.
-            詳しくは <a href="<?php echo $path; ?>html/head.php">ここに</a>. <br>
+            詳しくは <a class="bold" href="<?php echo $path; ?>html/head.php">ここ</a>. <br>
             <code>&lt;head&gt;</code> は省略できるが, HTML5対応ブラウザでは自動的に生成されるらしい.
             (<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/head">参照</a>)
           </p>
@@ -82,7 +84,7 @@
           <h3>bodyタグ</h3>
           <p>
             このタグの中にメインとなるコンテンツを記述する.
-            大量になってしまうので詳しくは<a href="<?php echo $path; ?>html/body.php">ここに</a>.
+            大量になってしまうので詳しくは<a class="bold" href="<?php echo $path; ?>html/body.php">ここ</a>.
           </p>
         </section>
       </main>

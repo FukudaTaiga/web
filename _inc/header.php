@@ -1,3 +1,3 @@
 <header>
-  <h1><a href="<?php echo $path; ?>index.php">Tiger Study Report</a></h1>
+  <span class="homeTitle"><a href="<?php echo $path; ?>index.php">Tiger Study Report</a></span>
 </header>

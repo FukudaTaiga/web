@@ -11,35 +11,17 @@ body {
   background: linear-gradient(135deg, #99FFCC, #669966)
 }
 
-a {
-  text-decoration: none;
-}
-
-section h2 {
-  display: block;
-  padding: 4px 10px;
-  border-left: 5px solid #000;
-  background: #f4f4f4;
-}
-
-section h3 {
-  display: block;
-  padding: 4px 5px;
-  border-left: 2px solid #000;
-  background: #f4f4f4;
-}
-
-section h4::before {
-  content: "\025AA";
-}
-
 #wrap {
   width: auto;
   margin: 0px auto;
 }
 
+.homeTitle {
+  font-size: 300%;
+}
+
 header {
-  padding: 10px;
+  padding: 2rem;
   margin: 0 auto;
   border: solid 2px black;
   background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
@@ -51,27 +33,33 @@ nav {
   font-size: 90%;
   width: 10%;
   height: auto;
-  margin: 10px 2px 10px 0px;
+  margin: 0.5rem 0.25rem 0.5rem 0.125rem;
   float: left;
   background-color: #D9E5FF;
-  padding: 5px;
+  padding: 0.3125rem;
   border: solid 2px black;
 }
 
 nav h2 {
   display: block;
-  padding: 4px 5px;
+  padding: 0.3125rem;
   border: 2px solid #000;
   background: #f4f4f4;
+}
+
+nav ul[class^="layer_"] {
+  list-style-type: none;
+  padding-left: 0.5em;
+  font-size: 80%;
 }
 
 main {
   width: 80%;
   height: auto;
-  margin: 10px 10px 10px 0px;
+  margin: 0.625rem;
   float: left;
   background-color: #D9E5FF;
-  padding: 10px;
+  padding: 0.5rem;
   border: solid 2px black;
 }
 
@@ -87,17 +75,60 @@ footer {
   display: none;
 }
 
+
+a {
+  text-decoration: none;
+}
+
+section h2 {
+  display: block;
+  padding: 0.5rem 0.625rem;
+  border-left: 5px solid #000;
+  background: #f4f4f4;
+}
+
+section h3 {
+  display: block;
+  padding: 0.4rem 0.3125rem;
+  border-left: 2px solid #000;
+  background: #f4f4f4;
+}
+
+section h4::before {
+  content: "\025AA";
+}
+
+section .example * {
+  padding: initial;
+  margin: initial;
+  border: initial;
+  background: initial;
+  background-color: initial;
+}
+
 .example {
   display: block;
   width: 90%;
-  margin: 10px;
-  padding: 5px 5px 5px 5px;
+  margin: 0.625rem;
+  padding: 0.3125rem;
   border: solid 1px black;
   background-color: #FFFFCC;
+  line-height: 1.25rem;
 }
 
 .red {
   color: red;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#toc {
+  background-color: #FFEEFF;
+  margin: 0 0.125rem;
+  padding: 0.5rem;
+  border: solid 2px black;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {

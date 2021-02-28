@@ -18,6 +18,7 @@
       ?>
 
       <main>
+        <h1>そもそもHTMLって何？</h1>
         <section>
           <h2>htmlとは?</h2>
           <p>
