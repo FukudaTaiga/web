@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr"> <!--dir: reading direction  -->
+  <head>
+    <meta charset="utf-8"> <!--  -->
+    <base href=".">
+    <link rel="stylesheet" href="base.css"> <!-- link css -->
+    <title>my learning page</title>
+  </head>
+  <body> <!-- h1~6: 1 big 6 small p: paragraph-->
+    <div id="wrap">
+      <header>
+        <h1><a href="index.html">my learning</a></h1>
+      </header>
+
+      <div id="sidenavi">
+        <div class="html">
+          <h2><span onclick="openClose(this.className)" class="html">html</span></h2>
+          <ul class="layer_html close"> <!-- Unordered List -->
+            <li> <a href="html/whats.html">htmlとは?</a> </li> <!-- element of list -->
+            <li> <a href="html/html.html">htmlタグ</a> </li>
+            <li> <a href="html/head.html">headタグ</a> </li>
+          </ul>
+        </div>
+        <div class="css">
+          <h2><span onclick="openClose(this.className)" class="css">css</span></h2>
+          <ul class="layer_css close">
+            <li>what's css?</li>
+            <li>font</li>
+            <li>color</li>
+            <li>line</li>
+            <li>li</li>
+          </ul>
+        </div>
+        <div class="js">
+          <h2><span onclick="openClose(this.className)" class="javascript">javascript</span></h2>
+        </div>
+        <div class="ts">
+          <h2><span onclick="openClose(this.className)" class="javascript">typescript</span></h2>
+        </div>
+      </div>
+
+      <div id="contents">
+        <p>
+          <code>genie -c bash</code> <br>
+          <code>genie -s</code>
+        </p>
+      </div>
+
+      <footer>
+        <small>Copyright (c) Fukuda Taiga All Rights Reserved.</small> <!-- something about rights -->
+        <address>
+          if you want to contact with me, send
+          <a href="mailto:fuku.taiga.0119@gmail.com?subject=feedback">email</a>
+        </address>
+      </footer>
+
+      <script type="text/javascript" src="click.js"></script>
+    </div>
+  </body>
+</html>

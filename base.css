@@ -1,0 +1,105 @@
+@charset "UTF-8";
+body {
+  font-size: 100%;
+  font-family: "Times", serif;
+  /*
+  serif: ひげ付き. 明朝体,Times,Century
+  sans-serif: ひげなし. ゴシック体, Helvetica,Arial
+  */
+  line-height: 110%; /*also 1.5 affect the same. line = line-height - font-size*/
+  color: navy; /* #333333 - #rrggbb */
+  background: linear-gradient(135deg, #99FFCC, #669966)
+}
+
+a {
+  text-decoration: none;
+}
+
+section h2 {
+  display: block;
+  padding: 4px 10px;
+  border-left: 5px solid #000;
+  background: #f4f4f4;
+}
+
+section h3 {
+  display: block;
+  padding: 4px 5px;
+  border-left: 2px solid #000;
+  background: #f4f4f4;
+}
+
+section h4::before {
+  content: "\025AA";
+}
+
+#wrap {
+  width: auto;
+  margin: 0px auto;
+}
+
+header {
+  padding: 10px;
+  margin: 0 auto;
+  border: solid 2px black;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
+  background-image: -webkit-linear-gradient(left, #fa709a 0%, #fee140 100%);
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+nav {
+  font-size: 90%;
+  width: 10%;
+  height: auto;
+  margin: 10px 2px 10px 0px;
+  float: left;
+  background-color: #D9E5FF;
+  padding: 5px;
+  border: solid 2px black;
+}
+
+nav h2 {
+  display: block;
+  padding: 4px 5px;
+  border: 2px solid #000;
+  background: #f4f4f4;
+}
+
+main {
+  width: 80%;
+  height: auto;
+  margin: 10px 10px 10px 0px;
+  float: left;
+  background-color: #D9E5FF;
+  padding: 10px;
+  border: solid 2px black;
+}
+
+footer {
+  clear: both;
+}
+
+.open {
+  display: block;
+}
+
+.close {
+  display: none;
+}
+
+.example {
+  display: block;
+  width: 90%;
+  margin: 10px;
+  padding: 5px 5px 5px 5px;
+  border: solid 1px black;
+  background-color: #FFFFCC;
+}
+
+.red {
+  color: red;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+display: block;
+}
