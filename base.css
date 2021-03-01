@@ -6,7 +6,7 @@ body {
   serif: ひげ付き. 明朝体,Times,Century
   sans-serif: ひげなし. ゴシック体, Helvetica,Arial
   */
-  line-height: 110%; /*also 1.5 affect the same. line = line-height - font-size*/
+  line-height: 125%; /*also 1.5 affect the same. line = line-height - font-size*/
   color: navy; /* #333333 - #rrggbb */
   background: linear-gradient(135deg, #99FFCC, #669966)
 }
@@ -124,8 +124,16 @@ section .example * {
   color: red;
 }
 
+.fuchsia {
+  color: fuchsia;
+}
+
 .bold {
   font-weight: bold;
+}
+
+.center {
+  text-align: center;
 }
 
 #toc {

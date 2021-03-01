@@ -200,19 +200,57 @@
         <section id="paragraph">
           <h3>パラグラフを表すタグ</h3>
           <p>
-            pによって段落を表す.
+            pで段落を表すことができる.
+            このタグで囲まれた部分は段落としてみなされるので, 前後で1行分の改行が入る.
+            単に改行を表すbrと混同してはいけない.
+            画像などが単体でも一つの段落として扱うことが多いそう.
+            最も使用頻度が高いであろうタグ. <br>
+            属性としてalignを持ち, left, right, center, justy(両端揃え)
+            が指定できる.
+            あまり行間が詰まっていると読みづらいので, line-heightを
+            スタイルシートで広くしてやったりすると読みやすくなる.
+            <div class="example">
+              <h4>left</h4>
+              <p align="left"> 同じ文章だよ </p>
+              <h4>right</h4>
+              <p align="right"> 同じ文章だよ </p>
+              <h4>center</h4>
+              <p align="center"> 同じ文章だよ </p>
+              <h4>justy</h4>
+              <p align="justy"> 同じ文章だよ </p>
+            </div>
           </p>
         </section>
 
         <section id="Emphasis">
           <h3>強調を表すタグ</h3>
-          強調するためのタグには以下がある.
-          <ul>
-            <li> strong </li>
-            <li> em </li>
-            <li> mark </li>
-            <li> b </li>
-          </ul>
+          <p>
+            強調するためのタグには以下がある.
+            <ul>
+              <li> strong </li>
+              <li> em </li>
+              <li> mark </li>
+              <li> b </li>
+            </ul>
+          </p>
+        </section>
+
+        <section>
+          <h3>画像等を表すタグ</h3>
+          <p>
+            imgで画像を表すことができる.
+            下記の属性とusemap, ismap属性を持つ.
+            <ul>
+              <li>src: 必須. 画像のURLを表す.</li>
+              <li>alt: 画像が使えないときのテキストを指定.</li>
+              <li>width: 横幅.</li>
+              <li>height: 高さ</li>
+            </ul>
+            <div class="example center">
+              &lt;img src="&lt;?php echo $path; ?&gt;img/tiger.png" alt="tiger" title="虎のフリー素材"&gt;
+              <img src="<?php echo $path; ?>img/tiger.png" alt="tiger" title="虎のフリー素材">
+            </div>
+          </p>
         </section>
       </main>
 

@@ -30,7 +30,8 @@
   <div class="php">
     <h2> <span onclick="openClose(this.className)" class="php">php</span> </h2>
     <ul class="layer_php close">
-      <li>準備中</li>
+      <li> <a href="<?php echo $path; ?>php/whats.php">PHPとは</a> </li>
+      <li> <a href="<?php echo $path; ?>php/basic.php">PHPの基本</a> </li>
     </ul>
   </div>
   <div class="algo">
