@@ -131,6 +131,23 @@ section .example * {
   border: solid 2px black;
 }
 
+#comment_section {
+  background-color: #EEEEEE;
+  border: solid 2px black;
+}
+
+.comment_per {
+  padding: 0.5rem;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+
+.writer_name {
+  padding: 0.2rem;
+  font-size: 110%;
+  font-weight: bold;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 display: block;
 }
