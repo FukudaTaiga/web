@@ -122,7 +122,7 @@
             <h4> footer </h4>
             <p>
               webページのフッターを表す. header同様, 1ページに一つといった決まりはなく,
-              sectionやarticleのヘッダーとしても使える.
+              sectionやarticleのフッターとしても使える.
             </p>
           </p>
         </section>

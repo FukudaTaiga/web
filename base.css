@@ -67,6 +67,10 @@ footer {
   clear: both;
 }
 
+.clear {
+  clear: both;
+}
+
 .open {
   display: block;
 }
