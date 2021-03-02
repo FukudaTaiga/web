@@ -9,10 +9,59 @@
   $split_data = null;
   $msg = array();
   $msg_array = array();
+  $success_msg = null;
+  $error_msg = array();
+  $clean = array();
 ?>
 
 <!-- comment input form -->
+
+<?php
+if (!empty($_POST['submit'])) {
+  if (empty($_POST['comment_name'])) {
+    $error_msg[] = "名前を入力してください.";
+  }
+  else {
+    $clean['comment_name'] = htmlspecialchars($_POST['comment_name'], ENT_QUOTES);
+    $clean['comment_name'] = preg_replace('/\\r\\n|\\n|\\r/', '', $clean['comment_name']);
+  }
+
+  if (empty($_POST['comment_msg'])) {
+    $error_msg[] = "コメントが空です.";
+  }
+  else {
+    $clean['comment_msg'] = htmlspecialchars($_POST['comment_msg'], ENT_QUOTES);
+    $clean['comment_msg'] = preg_replace('/\\r\\n|\\n|\\r/', '<br>', $clean['comment_msg']);
+  }
+
+  if (empty($error_msg) && $file_handle = fopen(FILENAME, "a")) {
+    $date = date("Y-m-d H:i:s");
+    $data =
+    "'".$clean['comment_name'].
+    "','".$clean['comment_msg'].
+    "','".$date.
+    "'\n";
+
+    fwrite($file_handle, $data);
+
+    fclose($file_handle);
+
+    $success_msg = "送信完了.";
+  }
+}
+?>
+
 <aside class="inputform clear">
+  <?php if (!empty($success_msg)) :?>
+    <p class="success_msg"> <?php echo $success_msg; ?> </p>
+  <?php endif; ?>
+  <?php if (!empty($error_msg)) :?>
+    <ul>
+      <?php foreach ($error_msg as $value) :?>
+        <li class="error_msg"> <?php echo $value; ?> </li>
+      <?php endforeach; ?>
+    </ul>
+  <?php endif; ?>
   <span style="
   background-color: white;
   font-size: 150%;
@@ -34,22 +83,6 @@
     <input type="submit" name="submit" value="送信">
   </form>
 </aside>
-
-<?php
-if (!empty($_POST['submit']) && !empty($_POST['comment_name']) && !empty($_POST['comment_msg'])) {
-  if ($file_handle = fopen(FILENAME, "a")) {
-    $date = date("Y-m-d H:i:s");
-    $data =
-    "'".$_POST['comment_name'].
-    "','".$_POST['comment_msg'].
-    "','".$date."'\n";
-
-    fwrite($file_handle, $data);
-
-    fclose($file_handle);
-  }
-}
-?>
 
 <!-- comment section -->
 <?php
@@ -77,6 +110,7 @@ if ($file_handle = fopen(FILENAME, "r")) {
   fclose($file_handle);
 }
 ?>
+
 <aside id="comment_section">
   <?php
   if (!empty($msg_array)):
@@ -95,5 +129,4 @@ if ($file_handle = fopen(FILENAME, "r")) {
     endforeach;
   endif;
   ?>
-
 </aside>

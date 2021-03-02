@@ -8,7 +8,7 @@ body {
   */
   line-height: 125%; /*also 1.5 affect the same. line = line-height - font-size*/
   color: navy; /* #333333 - #rrggbb */
-  background: linear-gradient(135deg, #99FFCC, #669966)
+  background: linear-gradient(135deg, #CCFFCC, #669966);
 }
 
 #wrap {
@@ -158,6 +158,20 @@ section .example * {
   padding: 0.2rem;
   font-size: 110%;
   font-weight: bold;
+}
+
+.success_msg {
+  padding: 0.2rem;
+  border: solid 3px #1E90FF;
+  color: #1E90FF;
+  background-color: white;
+}
+
+.error_msg {
+  padding: 0.2rem;
+  border: solid 2px maroon;
+  color: maroon;
+  background-color: white;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
