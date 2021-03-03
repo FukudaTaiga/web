@@ -1,0 +1,15 @@
+環境:
+サーバーサイド:
+apache2
+  php
+  phpmyadmin
+  mariadb
+
+フロントエンド:
+  html
+  css
+  javascript
+
+  フレームワークは特になし.
+  今後Playか何か使ってみようと思う.
+  サーバー側でjava, python等使ってみたい.
