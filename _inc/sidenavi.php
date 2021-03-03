@@ -34,12 +34,6 @@
       <li> <a href="<?php echo $path; ?>php/basic.php">PHPの基本</a> </li>
     </ul>
   </div>
-  <div class="algo">
-    <h2><span onclick="openClose(this.className)" class="algo">algorism</span></h2>
-    <ul class="layer_algo close">
-      <li>準備中</li>
-    </ul>
-  </div>
   <div class="cpp">
     <h2><span onclick="openClose(this.className)" class="cpp">c++</span></h2>
     <ul class="layer_cpp close">
@@ -55,6 +49,18 @@
   <div class="python">
     <h2><span onclick="openClose(this.className)" class="python">python</span></h2>
     <ul class="layer_python close">
+      <li>準備中</li>
+    </ul>
+  </div>
+  <div class="algo">
+    <h2><span onclick="openClose(this.className)" class="algo">アルゴリズム</span></h2>
+    <ul class="layer_algo close">
+      <li>準備中</li>
+    </ul>
+  </div>
+  <div class="db">
+    <h2><span onclick="openClose(this.className)" class="db">データベース</span></h2>
+    <ul class="layer_db close">
       <li>準備中</li>
     </ul>
   </div>
